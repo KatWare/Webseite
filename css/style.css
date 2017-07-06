@@ -141,6 +141,14 @@ banner
 	min-height: 650px;
 	position: relative;
 }
+
+#banneretc{
+	background-color: #E9E9E9 no-repeat fixed;
+	background-size: cover;
+	min-height: 650px;
+	position: relative;
+}
+
 .bg-color{
 	background-color: rgba(52, 73, 94, 0.50);
 	min-height: 650px;
