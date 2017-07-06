@@ -30,15 +30,19 @@
 	mail($empfaenger, $betreff, $text, "From: $absendername <$absendermail>");
 
 	$empfaenger_user = $email;
-	$absendername_user = "Kontaktformular";
-	$absendermail_user = "max-eric.behr@t-online.de";
-	$betreff_user = "Support Anfrage";
-	$text_user = "Danke für dein Anfrage
-	Name, Vorname: ".$nachname.". ".$vorname."
-	E-Mail: ".$email."
-	Nachricht:
-	".$nachricht;
-	mail($empfaenger_user, $betreff_user, $text_user, "From: $absendername_user <$absendermail>");
+	$absendername_user = "Support - KatWare";
+	$absendermail_user = "support@katware.de";
+	$betreff_user = "Anfrage eingegangen";
+	$text_user  = "Ihre Anfrage ist eingegangen und wird von unserem Supportteam überprüft.
+	
+	
+	Ihre Nachricht:
+	".$nachricht."
+	
+	
+	Mit freundlichen Grüßen
+	Ihr KatWare Support";
+	mail($empfaenger_user, $betreff_user, $text_user, "From: $absendername_user <$absendermail_user>");
 
 	
 	echo('Vielen Dank! Wir melden uns schnellstmöglich bei Ihnen.');
