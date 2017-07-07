@@ -33,16 +33,26 @@
 	$absendername_user = "Support - KatWare";
 	$absendermail_user = "support@katware.de";
 	$betreff_user = "Anfrage eingegangen";
-	$text_user  = "Ihre Anfrage ist eingegangen und wird von unserem Supportteam überprüft.
+	$from = "From: Support - KatWare <support@katware.de>\n";
+	$from .= "Reply-To: support@katware.de\n";
+	$from .= "Content-Type: text/html\n";
+
+	$text_user  .= '<html>
+<head>
+    <title>Support Anfrage</title>
+</head>
+ 
+<body>
+ 
+<h1>Support Anfrage</h1>
+ 
+<p>Danke für ihre Supportanfrage. Unser Support wird sich darum kümmern. Sie erhalten dann eine Antwort zur ihre Frage per Email</p>
+ 
+
+</body>
+</html>';
 	
-	
-	Ihre Nachricht:
-	".$nachricht."
-	
-	
-	Mit freundlichen Grüßen
-	Ihr KatWare Support";
-	mail($empfaenger_user, $betreff_user, $text_user, "From: $absendername_user <$absendermail_user>");
+	mail($empfaenger_user, $betreff_user, $text_user, $from);
 
 	
 	echo('Vielen Dank! Wir melden uns schnellstmöglich bei Ihnen.');
