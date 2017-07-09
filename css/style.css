@@ -170,7 +170,7 @@ banner
 }
 .btn-appoint, .btn-appoint:hover, .btn-appoint:focus{
 	margin-top: 10px;
-	margin-bottom: 10px;
+	padding: 10px 20px;
 	font-size: 18px;
 	background-color: rgb(231, 76, 60);
 	border-radius: 3px;
