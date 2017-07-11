@@ -46,7 +46,7 @@
  
 <h1>Support Anfrage</h1>
  
-<p>Danke für ihre Supportanfrage. Unser Support wird sich darum kümmern. Sie erhalten dann eine Antwort zur ihre Frage per Email.</p>
+<p>Danke für ihre Supportanfrage. Unser Support wird sich darum kümmern. Sie erhalten dann eine Antwort zur ihre Frage per Email</p>
  
 
 </body>
